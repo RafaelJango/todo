@@ -1,5 +1,12 @@
+import React from "react";
 import Home from "./src/screens/Home";
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
-  return <Home />;
+  return (
+    <>
+      <Home />
+      <StatusBar style="light" />
+    </>
+  );
 }
