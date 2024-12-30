@@ -4,13 +4,13 @@ import {
   Inter_400Regular,
   Inter_700Bold,
 } from "@expo-google-fonts/inter";
-import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
-import Loading from "../../components/Loading";
+import { View } from "react-native";
 
 import { s } from "./styles";
-import { colors } from "../../styles/theme";
 import Header from "../../components/Header";
 import TaskInput from "../../components/TaskInput";
+import Loading from "../../components/Loading";
+import TaskList from "@/components/TaskList";
 
 export default function Home() {
   const [fontLoaded] = useFonts({
@@ -27,6 +27,7 @@ export default function Home() {
       <Header />
       <View style={s.container}>
         <TaskInput />
+        <TaskList />
       </View>
     </>
   );
