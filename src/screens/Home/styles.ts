@@ -3,18 +3,16 @@ import { colors } from "../../styles/theme";
 import { fontFamily } from "../../styles/theme";
 
 export const s = StyleSheet.create({
-  Container: {
+  container: {
     flex: 1,
-    backgroundColor: colors.base[700],
-    alignItems: "center",
+    backgroundColor: colors.base[600],
+    padding: 32,
   },
+  
   text: {
     fontSize: 32,
     fontFamily: fontFamily.regular,
     color: colors.base[300],
   },
-  image: {
-    marginTop: 100,
-    marginBottom: 80,
-  },
+  
 });
