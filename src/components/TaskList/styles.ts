@@ -39,8 +39,7 @@ export const s = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: colors.base[400],
-    width: 25,
-    height: 19,
+    
     borderRadius: 100,
     paddingHorizontal: 8,
     paddingVertical: 2,
@@ -92,6 +91,13 @@ export const s = StyleSheet.create({
     fontSize: 14,
     textAlign: "center",
     color: colors.base[100],
+  },
+  taskTextCompleted: {
+    flex: 1,
+    fontSize: 14,
+    textAlign: "center",
+    textDecorationLine: "line-through",
+    color: colors.base[300],
   },
   taskDelete: {
     justifyContent: "center",
